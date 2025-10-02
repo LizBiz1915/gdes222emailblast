@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{Email Subject Line}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body style="margin:0; padding:0; font-family:Arial, sans-serif; background-color:#f3f4f6;">
+
+  <!-- Preheader (hidden) -->
+  <div style="display:none!important; visibility:hidden; opacity:0; height:0; width:0; overflow:hidden; font-size:1px; line-height:1px; color:#ffffff;">
+    {{Preheader: short summary for inbox preview}}
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f3f4f6; padding:20px 0;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:680px; margin:0 auto; background-color:#ffffff; border-radius:8px; overflow:hidden;">
+
+          <!-- Header -->
+          <tr>
+            <td style="text-align:center; padding:16px; background-color:#ffffff;">
+              <img src="{{LOGO_URL}}" alt="Company Logo" width="160" style="max-width:160px; height:auto; margin:0 auto; display:block; border:0;">
+            </td>
+          </tr>
+
+          <!-- Hero -->
+          <tr>
+            <td style="padding:24px; background-color:#ffffff; text-align:center;">
+              <h1 style="font-size:22px; margin:0 0 8px; color:#111827;">{{Main Headline}}</h1>
+              <p style="font-size:15px; line-height:1.5; color:#374151; margin:0 0 16px;">{{Introductory text goes here — short and engaging.}}</p>
+              <a href="{{CTA_URL}}" style="display:inline-block; padding:12px 18px; border-radius:6px; background-color:#0077cc; color:#ffffff; font-weight:bold; text-decoration:none;">Call to Action</a>
+            </td>
+          </tr>
+
+          <!-- Two columns -->
+          <tr>
+            <td style="padding:16px; background-color:#ffffff;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="width:50%; vertical-align:top; padding:0 8px;">
+                    <img src="{{FEATURE_IMAGE_1_URL}}" alt="Feature 1" style="width:100%; max-width:300px; border-radius:6px; display:block; margin-bottom:10px;">
+                    <h2 style="font-size:16px; margin:10px 0 6px; color:#111827;">{{Feature Title 1}}</h2>
+                    <p style="font-size:14px; line-height:1.4; color:#4b5563; margin:0 0 12px;">{{Short description for feature 1}}</p>
+                  </td>
+                  <td style="width:50%; vertical-align:top; padding:0 8px;">
+                    <img src="{{FEATURE_IMAGE_2_URL}}" alt="Feature 2" style="width:100%; max-width:300px; border-radius:6px; display:block; margin-bottom:10px;">
+                    <h2 style="font-size:16px; margin:10px 0 6px; color:#111827;">{{Feature Title 2}}</h2>
+                    <p style="font-size:14px; line-height:1.4; color:#4b5563; margin:0 0 12px;">{{Short description for feature 2}}</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Secondary block -->
+          <tr>
+            <td style="padding:20px; background-color:#f9fafb; text-align:center;">
+              <h2 style="font-size:18px; margin:0 0 8px; color:#111827;">{{Secondary Headline}}</h2>
+              <p style="font-size:14px; line-height:1.4; color:#374151; margin:0;">{{Supporting message, promo, or announcement}}</p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:18px; text-align:center; background-color:#ffffff; font-size:13px; color:#6b7280;">
+              <div style="margin-bottom:12px;">
+                <a href="{{FACEBOOK_URL}}" style="margin:0 6px;"><img src="{{SOCIAL_FACEBOOK_ICON_URL}}" alt="Facebook" width="24" height="24" style="display:inline-block; border:0;"></a>
+                <a href="{{TWITTER_URL}}" style="margin:0 6px;"><img src="{{SOCIAL_TWITTER_ICON_URL}}" alt="Twitter" width="24" height="24" style="display:inline-block; border:0;"></a>
+                <a href="{{INSTAGRAM_URL}}" style="margin:0 6px;"><img src="{{SOCIAL_INSTAGRAM_ICON_URL}}" alt="Instagram" width="24" height="24" style="display:inline-block; border:0;"></a>
+              </div>
+              <p style="margin:0 0 6px;">You’re receiving this email because you signed up at <strong>{{Company Name}}</strong>.</p>
+              <p style="margin:0 0 6px;">{{Company Address}}</p>
+              <p style="margin:0 0 10px;"><a href="{{UNSUBSCRIBE_URL}}" style="color:#6b7280; text-decoration:underline;">Unsubscribe</a></p>
+              <p style="margin:0; font-size:12px; color:#9ca3af;">© {{YEAR}} {{Company Name}}. All rights reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
